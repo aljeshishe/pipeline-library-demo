@@ -16,8 +16,7 @@ def call(body) {
       stage('Get Dockerfile') {
         steps {
           script {
-            //   def tmpFile = libraryResource 'Dockerfile'
-            // writeFile file: 'Dockerfile', text: tmpFile
+            echo body
           }
         }
       }
