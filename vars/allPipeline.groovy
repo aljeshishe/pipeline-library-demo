@@ -10,7 +10,7 @@ def call(body) {
     stages {
       stage('Checkout') {
         steps {
-          // checkout scm
+          echo sh(returnStdout: true, script: 'env|sort')
         }
       }
       stage('Get Dockerfile') {
