@@ -10,14 +10,14 @@ def call(body) {
     stages {
       stage('Checkout') {
         steps {
-          checkout scm
+          // checkout scm
         }
       }
       stage('Get Dockerfile') {
         steps {
           script {
-            def tmpFile = libraryResource 'Dockerfile'
-            writeFile file: 'Dockerfile', text: tmpFile
+            //   def tmpFile = libraryResource 'Dockerfile'
+            // writeFile file: 'Dockerfile', text: tmpFile
           }
         }
       }
