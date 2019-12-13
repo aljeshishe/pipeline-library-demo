@@ -1,9 +1,10 @@
-def call(branch) {
+def call(branch, params) {
   //def pipelineParams= [:]
   //body.resolveStrategy = Closure.DELEGATE_FIRST
   //body.delegate = pipelineParams
   //body()
   echo "${branch}"
+  echo "${params}"
   pipeline {
     agent any
 
