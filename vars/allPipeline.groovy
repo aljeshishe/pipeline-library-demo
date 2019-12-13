@@ -1,8 +1,8 @@
-def call(body, branch, param) {
-  def pipelineParams= [:]
-  body.resolveStrategy = Closure.DELEGATE_FIRST
-  body.delegate = pipelineParams
-  body()
+def call( branch, param) {
+  //def pipelineParams= [:]
+  //body.resolveStrategy = Closure.DELEGATE_FIRST
+  //body.delegate = pipelineParams
+  //body()
   echo "${branch}"
   echo "${param}"
   echo "${body}"
