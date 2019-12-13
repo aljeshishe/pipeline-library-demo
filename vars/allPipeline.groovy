@@ -15,10 +15,6 @@ def call(body, branch, param) {
           echo sh(returnStdout: true, script: 'env|sort')
         }
       }
-      stage('Get Dockerfile') {
-        steps {
-        }
-      }
       stage('Build') {
         steps {
           script {
