@@ -16,7 +16,6 @@ def call(body) {
       stage('Get Dockerfile') {
         steps {
           script {
-            echo body
           }
         }
       }
