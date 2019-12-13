@@ -17,8 +17,6 @@ def call(body, branch, param) {
       }
       stage('Get Dockerfile') {
         steps {
-          script {
-          }
         }
       }
       stage('Build') {
